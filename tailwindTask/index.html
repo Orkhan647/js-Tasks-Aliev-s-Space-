@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#010101] text-white">
+    <!-- main container -->
+    <div class="max-w-[1260px] mx-auto px-4">
+      <!-- Navbar -->
+      <nav class="flex items-center justify-between py-8">
+        <div class="font-fell text-2xl font-bold tracking-widest">LIGHT</div>
+
+        <div
+          class="hidden md:flex items-center space-x-10 lg:space-x-15 text-sm"
+        >
+          <a
+            href="#"
+            class="text-gray-300 transition-all hover:scale-105 pb-[5px] border-b-2 border-transparent hover:text-pink-500 hover:border-gray-100"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 transition-all hover:scale-105 pb-[5px] border-b-2 border-transparent hover:text-pink-500 hover:border-gray-100"
+            >Company</a
+          >
+          <a
+            href="#"
+            class="text-gray-300 transition-all hover:scale-105 pb-[5px] border-b-2 border-transparent hover:text-pink-500 hover:border-gray-100"
+            >Features</a
+          >
+          <button
+            class="bg-linear-to-r from-pink-500 to-purple-600 px-7 py-2.5 rounded-sm text-sm font-bold shadow-lg shadow-pink-500/20 transition-all hover:cursor-pointer hover:scale-105 active:scale-95"
+          >
+            Sign up
+          </button>
+        </div>
+
+        <div class="md:hidden text-2xl cursor-pointer">☰</div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section
+        class="relative grid grid-cols-1 lg:grid-cols-2 mt-8 lg:mt-16 items-center gap-12"
+      >
+        <!-- Background Shadow -->
+        <div
+          class="hidden md:block absolute -z-1 left-30 -top-50 w-[900px] h-[900px] pointer-events-none"
+        >
+          <img
+            src="./assets/shadowTop.png"
+            alt="bgShadow"
+            class="w-full h-full object-contain"
+          />
+        </div>
+
+        <!-- Left -->
+        <div class="space-y-6 lg:space-y-8 text-center lg:text-left">
+          <h1 class="font-orbitron text-4xl md:text-5xl font-bold text-white">
+            Let's Explore <br />
+            Three-Dimensional <br />
+            visual
+          </h1>
+
+          <p
+            class="font-fell text-gray-400 text-sm max-w-md mx-auto lg:mx-0"
+          >
+            With virtual technology you can see the digital world
+            <br class="hidden lg:block" />
+            feel more real and you can play the game with a
+            <br class="hidden lg:block" />
+            new style.
+          </p>
+
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6"
+          >
+            <button
+              class="w-full sm:w-auto bg-linear-to-r from-pink-500 to-purple-600 px-8 py-3 rounded-sm font-bold text-sm hover:scale-105 transition hover:cursor-pointer active:scale-95"
+            >
+              Get it Now
+            </button>
+            <a
+              href="#"
+              class="font-orbitron text-sm border-b-2 border-transparent hover:border-gray-100 hover:pb-[2px] hover:cursor-pointer hover:scale-105 transition"
+            >
+              Explore Device
+            </a>
+          </div>
+
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-3 sm:space-y-0 sm:space-x-4 pt-4"
+          >
+            <div class="flex -space-x-2">
+              <img
+                src="./assets/profile1.png"
+                alt="User 1"
+                class="w-10 h-10 rounded-full object-cover border-2 border-[#010101]"
+              />
+              <img
+                src="./assets/profile2.png"
+                alt="User 2"
+                class="w-10 h-10 rounded-full object-cover border-2 border-[#010101]"
+              />
+              <img
+                src="./assets/profile3.png"
+                alt="User 3"
+                class="w-10 h-10 rounded-full object-cover border-2 border-[#010101]"
+              />
+              <img
+                src="./assets/profile4.png"
+                alt="User 4"
+                class="w-10 h-10 rounded-full object-cover border-2 border-[#010101]"
+              />
+            </div>
+            <p class="text-[12px] text-gray-400">
+              <span class="text-white font-bold">• 400k+</span> people online
+            </p>
+          </div>
+        </div>
+        <!-- ------------ -->
+
+        <!-- Right  -->
+        <div
+          class="relative hidden lg:flex justify-center items-center lg:min-h-[500px] lg:translate-y-20 scale-90"
+        >
+          <div
+            class="absolute w-[40px] md:w-[50px] z-10 -top-10 md:-top-25 right-5 md:right-18"
+          >
+            <img
+              src="./assets/stars.png"
+              alt="Stars"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="absolute z-0 w-[85%] md:w-[90%] max-w-[380px]">
+            <img
+              src="./assets/heroBG.png"
+              alt="Background"
+              class="w-full h-auto"
+            />
+          </div>
+          <div
+            class="z-10 w-full max-w-[350px] md:max-w-[420px] -translate-y-20 md:-translate-y-45"
+          >
+            <img
+              src="./assets/heroImg.png"
+              alt="Hero Illustration"
+              class="w-full h-auto"
+            />
+
+            <div class="absolute w-full text-center p-4">
+              <h3
+                class="font-orbitron text-base md:text-lg font-bold text-white"
+              >
+                Cinematic Virtual Reality
+              </h3>
+              <div
+                class="w-32 md:w-50 h-[2px] bg-white mx-auto mt-2 mb-3"
+              ></div>
+              <p class="text-[9px] md:text-[10px] text-gray-300 px-4">
+                Let's be the best for more real and effective results and really
+                explore the limitless world.
+              </p>
+            </div>
+          </div>
+          <div
+            class="absolute z-20 w-[350px] md:w-[420px] lg:w-[480px] -top-[15%] md:-top-[25%] pointer-events-none"
+          >
+            <img
+              src="./assets/heroCircle.png"
+              alt="Visual Effect"
+              class="w-full h-auto"
+            />
+          </div>
+        </div>
+        <!-- ---------- -->
+      </section>
+      <!-- Last Section -->
+      <section
+        class=" grid grid-cols-1 lg:grid-cols-2 mt-20 lg:mt-32 items-center gap-12 lg:gap-20"
+      >
+        
+
+            <img class="absolute -z-1 left-0 top-[50%] w-[600px]" src="./assets/shadowLeft.png" alt="">
+            <img class="absolute -z-1 right-0 top-[50%] w-[600px]" src="./assets/shadowRight.png" alt="">
+        
+        <!-- Left-->
+        <div
+          class="relative w-full flex flex-col sm:flex-row lg:flex-row items-center justify-between lg:h-[450px] space-y-6 sm:space-y-0"
+        >
+          <div class="relative lg:absolute lg:top-0 lg:left-0">
+            <img
+              src="./assets/imgGirl.png"
+              alt="Experience 1"
+              class="w-full sm:w-[240px] md:w-[280px] lg:w-[260px] xl:w-[280px] h-auto object-cover"
+            />
+          </div>
+
+          <div
+            class="relative lg:absolute lg:bottom-0 lg:right-0 xl:translate-x-10"
+          >
+            <img
+              src="./assets/imgBoy.png"
+              alt="Experience 2"
+              class="w-full sm:w-[200px] md:w-[240px] lg:w-[220px] xl:w-[240px] h-auto object-cover"
+            />
+          </div>
+        </div>
+        <!-- --------------- -->
+
+        <!-- Right -->
+        <div class="space-y-6 text-center lg:text-left">
+          <h3
+            class="font-orbitron text-3xl md:text-5xl font-bold text-white"
+          >
+            New Experience In <br />
+            Playing Game
+          </h3>
+
+          <p
+            class="font-fell text-gray-400 text-sm md:text-base max-w-md mx-auto lg:mx-0"
+          >
+            You can try playing the game with a new style and of course a more
+            real feel, like you are the main character in your game and
+            adventure in this new digital world.
+          </p>
+
+          <button
+            class="bg-linear-to-r from-pink-500 to-purple-600 px-10 py-3 rounded-sm text-sm font-bold shadow-lg shadow-pink-500/20 transition-all hover:cursor-pointer hover:scale-105 active:scale-95"
+          >
+            Get it Now
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

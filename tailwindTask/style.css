@@ -1,0 +1,19 @@
+@import "tailwind.css";
+
+@font-face {
+    font-family: "orbition";
+    src: url("./fonts/Orbitron-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "IMFEL";
+    src: url('./fonts/IMFellGreatPrimerSC-Regular.ttf');
+}
+ /* unique class for fonts */
+.font-orbitron {
+    font-family: "orbition";
+}
+
+.font-fell {
+    font-family: "IMFEL" ;
+}
