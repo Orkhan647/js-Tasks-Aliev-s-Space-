@@ -19,6 +19,5 @@ let netice = edediTersCevir(number);
 
 alert(`Ters eded: ${netice}`);  
 
-// sonu sifirla biten ededlerin (meselen, 120-nin tersi olan 021-in) ondeki sifirini qorumaq ucun
-//  funksiyadan temiz eded yox, String qaytaririq. cunki riyazi olaraq ededin onunde sifir qala bilmez.
+
 
