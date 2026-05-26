@@ -13,4 +13,4 @@ function sumOfEven(num) {
 
   return result;
 }
-console.log(sumOfEven(-6));
+console.log(sumOfEven(10));

@@ -3,7 +3,7 @@
 
 function findLength(num) {
   if (isNaN(num)) {
-    return "Herf daxil etmek olmaz";
+    return alert("Herf daxil etmek olmaz")
   }
    let result =  alert( `Daxil etdiyiniz (${number}) ededi ${(num + "").replace("-", "").length}-reqemden ibaretdir`);
    
