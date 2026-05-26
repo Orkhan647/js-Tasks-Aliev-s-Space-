@@ -5,10 +5,10 @@ function findLength(num) {
   if (isNaN(num)) {
     return "Herf daxil etmek olmaz";
   }
-
-  return alert(
-    `Daxil etdiyiniz (${number}) ededi ${(num + "").replace("-", "").length}-reqemden ibaretdir`,
-  );
+   let result =  alert( `Daxil etdiyiniz (${number}) ededi ${(num + "").replace("-", "").length}-reqemden ibaretdir`);
+   
+  return result
+  
 }
 
 let number = +prompt("Reqem daxil edin");
