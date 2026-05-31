@@ -5,13 +5,18 @@
 // net maaşı qaytar
 
 const calculateSalary = (salary) => {
-    
-  const calculateTax = (amount) => amount * 0.13;
+
+  const calculateTax = (amount) => {
+
+    return amount * 0.13;
+  };
 
   const netSalary = salary - calculateTax(salary);
 
   return netSalary;
 };
+
+
 
 let salaryInput = +prompt("Maasinizi daxil edin");
 
