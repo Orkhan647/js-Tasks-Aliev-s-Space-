@@ -6,27 +6,35 @@
 // əks halda → "Qazana bilmir"
 
 const stipend = () => {
-  let score;
+  const totalScore = 700;
+
+  let studentScore;
 
   while (true) {
-    score = +prompt("Balinizi daxil edin");
+    studentScore = +prompt(`Balinizi daxil edin (0-${totalScore})`);
 
-    if (isNaN(score)) {
+    if (isNaN(studentScore)) {
       alert("Xeta! Bali duzgun daxil edin");
-    } else if (score < 0 || score > 100) {
-      alert("Bal 0-100 arasi olmalidir");
+    } else if (studentScore < 0 || studentScore > totalScore) {
+      alert(`Bal 0-${totalScore} arasi olmalidir`);
     } else {
       break;
     }
   }
 
-  const check = (grade) => {
-    return grade >= 80
+  const averagePercent = Math.floor((studentScore / totalScore) * 100);
+
+  const check = (percent) => {
+    return percent >= 80
       ? "Tebrikler! Stipendiya qazandiniz"
       : "Teessuf olsun ki, stipendiya qazana bilmediniz";
   };
 
-    alert(`Baliniz: ${score}\nNetice: ${check(score)}`);
+  alert(
+    `Sizin baliniz: ${studentScore}
+Faiz gostericiniz: ${averagePercent}%
+Netice: ${check(averagePercent)}`,
+  );
 };
 
 stipend();
