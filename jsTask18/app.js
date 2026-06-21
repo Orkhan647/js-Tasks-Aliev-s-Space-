@@ -1,43 +1,39 @@
-// Task 2: İki tarix arasındakı gün sayını tap
+// Task 2: Calculate days between two dates
 
-function getDaysBetweenDates(date1, date2) {
-  const differenceInMs = Math.abs(date2 - date1);
+function getDays(date1, date2) {
+  const diff = Math.abs(date2 - date1);
 
-
-  const msInOneDay = 1000 * 60 * 60 * 24;
-
-  const days = Math.ceil(differenceInMs / msInOneDay);
-
+  const dayInMs = 24 * 60 * 60 * 1000; 
+  
+  const days =Math.floor(diff / dayInMs);
   return days;
 }
 
+let input1, input2;
+let startDate, endDate;
 
-let dateInput1, dateInput2;
-let firstDate, secondDate;
-
-//validation
+// Validate first date
 while (true) {
-  dateInput1 = prompt("Birinci tarixi daxil edin (YYYY-MM-DD formatında):");
-  firstDate = new Date(dateInput1);
+  input1 = prompt("1-ci tarixi daxil et (YYYY-MM-DD):");
+  startDate = new Date(input1);
 
-  if (!isNaN(firstDate.getTime())) {
+  if (!isNaN(startDate.getTime())) {
     break;
   }
-  alert("Xəta! Tarixi düzgün formatda yazın (Məsələn: 2026-06-15)");
+  alert("Xeta: tarixi duzgun yaz meselken: 2026-06-15");
 }
 
-// validation 2
+// Validate second date
 while (true) {
-  dateInput2 = prompt("İkinci tarixi daxil edin (YYYY-MM-DD formatında):");
-  secondDate = new Date(dateInput2);
+  input2 = prompt("2-ci tarixi daxil et (YYYY-MM-DD):");
+  endDate = new Date(input2);
 
-  if (!isNaN(secondDate.getTime())) {
+  if (!isNaN(endDate.getTime())) {
     break;
   }
-  alert("Xəta! Tarixi düzgün formatda yazın (Məsələn: 2026-06-21)");
+  alert("Xeta: tarixi duzgun yaz meselken: 2026-06-21");
 }
 
+const result = getDays(startDate, endDate);
 
-const totalDays = getDaysBetweenDates(firstDate, secondDate);
-
-alert(`İki tarix arasındakı gün sayı: ${totalDays} gün`);
+alert(`umumi gun ferqi: ${result} gun`);
