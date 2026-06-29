@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Order Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Simple Order Form</h2>
+      <p class="subtitle">
+        Please fill out the form below to place your order.
+      </p>
+
+      <form id="orderForm" novalidate>
+        <div class="form-group">
+          <label for="product">Product</label>
+          <select id="product" name="product">
+            <option value="" disabled selected>
+              Select a product you want to order
+            </option>
+            <option value="product1">Product 1</option>
+            <option value="product2">Product 2</option>
+          </select>
+
+          <div id="product-error" class="error-message" style="display: none;">Error: bu xana doldurulmalidir</div>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            id="quantity"
+            name="quantity"
+            placeholder="Quantity"
+          />
+          <div id="quantity-error" class="error-message" style="display: none;">Error: bu xana doldurulmalidir</div>
+        </div>
+
+        <div class="form-group">
+          <input type="date" id="delivery-date" name="delivery-date" />
+          <div id="delivery-date-error" class="error-message" style="display: none;">Error: bu xana doldurulmalidir</div>
+        </div>
+
+        <div class="form-group">
+          <label>Delivery Time</label>
+          <div class="time-grid">
+            <label class="checkbox-label"
+              ><input
+                type="radio"
+                name="delivery_time"
+                value="09:00-11:00"
+              />
+              9:00 AM - 11:00 AM</label
+            >
+            <label class="checkbox-label"
+              ><input
+                type="radio"
+                name="delivery_time"
+                value="11:00-13:00"
+              />
+              11:00 AM - 1:00 PM</label
+            >
+            <label class="checkbox-label"
+              ><input
+                type="radio"
+                name="delivery_time"
+                value="13:00-15:00"
+              />
+              1:00 PM - 3:00 PM</label
+            >
+            <label class="checkbox-label"
+              ><input
+                type="radio"
+                name="delivery_time"
+                value="15:00-17:00"
+              />
+              3:00 PM - 5:00 PM</label
+            >
+          </div>
+          <div id="time-error" class="error-message" style="display: none;">Error: bu xana doldurulmalidir</div>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+          />
+          <div id="name-error" class="error-message" style="display: none;">Error: bu xana doldurulmalidir</div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+            />
+            <div id="email-error" class="error-message" style="display: none;">Error: bu xana doldurulmalidir</div>
+          </div>
+          <div class="form-group">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone"
+            />
+            <div id="phone-error" class="error-message" style="display: none;">Error: bu xana doldurulmalidir</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <textarea
+            id="comments"
+            name="comments"
+            placeholder="Additional Comments"
+          ></textarea>
+        </div>
+
+        <div class="form-group terms-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="terms" name="terms" /> I accept
+            the terms and conditions.
+          </label>
+          <div id="terms-error" class="error-message" style="display: none;">Error: bu xana doldurulmalidir</div>
+        </div>
+
+        <button type="submit" class="submit-btn">Place Order</button>
+      </form>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
