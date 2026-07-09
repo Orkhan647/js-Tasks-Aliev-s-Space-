@@ -21,6 +21,7 @@ body {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
+
 h1 {
   text-align: center;
   color: white;
@@ -271,4 +272,76 @@ h1 {
 
 #clearBtn:hover {
   background: darkred;
+}
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+#themeBtn {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: orange;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#themeBtn:hover {
+  transform: scale(1.1);
+}
+
+
+/* Light Mode */
+
+body.light-mode {
+  background: #f5f5f5;
+}
+
+body.light-mode .container,
+body.light-mode .modal-content {
+  background: #fff;
+}
+
+body.light-mode h1,
+body.light-mode .modal-content h2,
+body.light-mode .input-box label,
+body.light-mode .modal-content label,
+body.light-mode .left p {
+  color: #222;
+}
+
+body.light-mode .todo-form,
+body.light-mode .todo {
+  background: #f8f8f8;
+}
+
+body.light-mode .todo {
+  border-bottom: 2px solid #ddd;
+}
+
+body.light-mode input,
+body.light-mode .edit,
+body.light-mode .delete {
+  background: #fff;
+  color: #222;
+}
+
+body.light-mode .container {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .15);
+}
+
+body.light-mode #themeBtn {
+  background: #333;
 }

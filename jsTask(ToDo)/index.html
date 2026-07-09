@@ -8,58 +8,93 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <div class="container">
-      <h1>My Todos</h1>
+
+      <div class="header">
+        <h1>My Todos</h1>
+        <button id="themeBtn">🌙</button>
+      </div>
 
       <!-- Add Todo -->
       <div class="todo-form">
+
         <div class="input-box">
           <label>Name</label>
-          <input type="text" id="title" placeholder="Task name..." />
+          <input
+            type="text"
+            id="title"
+            placeholder="Task name..."
+          />
         </div>
 
         <div class="input-box">
           <label>Description</label>
-          <input type="text" id="description" placeholder="Description..." />
+          <input
+            type="text"
+            id="description"
+            placeholder="Description..."
+          />
         </div>
 
-        <button id="addBtn">Add Todo</button>
+        <button id="addBtn">
+          Add Todo
+        </button>
+
       </div>
 
+      <!-- Todo List -->
+      <div id="todoList"></div>
 
-      <div id="todoList">
-      </div>
+      <!-- Bottom Buttons -->
       <div class="buttons">
-    <button id="clearBtn">Clear All</button>
-</div>
+        <button id="clearBtn">
+          Clear All
+        </button>
+      </div>
+
     </div>
 
     <!-- Edit Modal -->
-
     <div id="modal" class="modal">
+
       <div class="modal-content">
+
         <h2>Edit Todo</h2>
 
         <div class="input-box">
           <label>Name</label>
 
-          <input type="text" id="editTitle" />
+          <input
+            type="text"
+            id="editTitle"
+          />
         </div>
 
         <div class="input-box">
           <label>Description</label>
 
-          <input type="text" id="editDescription" />
+          <input
+            type="text"
+            id="editDescription"
+          />
         </div>
 
         <div class="modal-buttons">
-          <button id="saveBtn">Save</button>
+          <button id="saveBtn">
+            Save
+          </button>
 
-          <button id="cancelBtn">Cancel</button>
+          <button id="cancelBtn">
+            Cancel
+          </button>
         </div>
+
       </div>
+
     </div>
 
     <script src="./app.js"></script>
+
   </body>
 </html>

@@ -2,7 +2,7 @@ const title = document.getElementById("title");
 const description = document.getElementById("description");
 const addBtn = document.getElementById("addBtn");
 const todoList = document.getElementById("todoList");
-
+const themeBtn = document.getElementById("themeBtn");
 const modal = document.getElementById("modal");
 const editTitle = document.getElementById("editTitle");
 const editDescription = document.getElementById("editDescription");
@@ -126,4 +126,18 @@ clearBtn.addEventListener("click", function () {
 
     render();
   }
+});
+
+//Dark Light mode
+
+themeBtn.addEventListener("click", () => {
+
+    document.body.classList.toggle("light-mode");
+
+    if(document.body.classList.contains("light-mode")){
+        themeBtn.innerHTML = "🌞";
+    }else{
+        themeBtn.innerHTML = "🌛";
+    }
+
 });
