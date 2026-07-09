@@ -13,6 +13,13 @@ const clearBtn = document.getElementById("clearBtn");
 let todos = JSON.parse(localStorage.getItem("todos")) || [];
 let editIndex;
 
+if (localStorage.getItem("theme") === "light") {
+  document.body.classList.add("light-mode");
+  themeBtn.innerHTML = "🌞";
+} else {
+  themeBtn.innerHTML = "🌛";
+}
+
 function render() {
   todoList.innerHTML = "";
 
@@ -130,14 +137,16 @@ clearBtn.addEventListener("click", function () {
 
 //Dark Light mode
 
+
+
 themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
 
-    document.body.classList.toggle("light-mode");
-
-    if(document.body.classList.contains("light-mode")){
-        themeBtn.innerHTML = "🌞";
-    }else{
-        themeBtn.innerHTML = "🌛";
-    }
-
+  if (document.body.classList.contains("light-mode")) {
+    themeBtn.innerHTML = "🌞";
+    localStorage.setItem("theme", "light");
+  } else {
+    themeBtn.innerHTML = "🌛";
+    localStorage.setItem("theme", "dark");
+  }
 });
